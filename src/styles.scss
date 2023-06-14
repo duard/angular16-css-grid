@@ -9,16 +9,26 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #E4F0FF;
+  background-color: #5b2f06;
+}
+.menu-spacer {
+  flex: 1 1 auto;
+  text-align: center;
 }
 
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  max-height: 50px;
+}
 .container {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: auto 1fr auto;
   grid-gap: 2px;
+  // grid-template-columns: 30% 60% 10%;
+	// grid-template-rows: 50px 150px 50px;
   grid-template-areas:
-  "nav header header"
+  "nav-header header header"
   "nav content side"
   "nav footer footer";
   height: 100vh;
@@ -28,13 +38,18 @@ https://stackblitz.com/github/SinghDigamber/angular-css-grid?file=src%2Fapp%2Fma
 		"logo nav nav"
 		"sidenav content advert"
 		"sidenav footer footer"
+
+    		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
 */
 app-header {
   color: white;
-  font-size: 14px;
+  // font-size: 14px;
   grid-area: header;
   text-align: center;
-  background-color: #FA7D44;
+  background-color: #8b7266;
+  height: 50px;
 }
 
 app-nav {
@@ -42,7 +57,14 @@ app-nav {
   // margin-left: 0.6rem;
   background-color: #2A92BF;
 }
-
+app-nav-header {
+  // color: white;
+  // font-size: 14px;
+  grid-area: nav-header;
+  text-align: center;
+  background-color: #FA7D44;
+  height: 50px;
+}
 app-privacy-policy,
 app-main {
   grid-area: content;
@@ -63,6 +85,7 @@ app-footer {
   color: white;
   text-align: center;
   padding: 25px 0;
+  height: 50px;
 }
 
 ul li {
@@ -107,4 +130,5 @@ app-arquivo-deposito {
   padding: 25px;
   overflow-y: scroll;
 }
+
 

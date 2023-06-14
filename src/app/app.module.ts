@@ -7,9 +7,10 @@ import { MaterialModule } from './shared/material.module';
 import { LayoutModule } from './shared/layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './routes/routes.module';
+import { NavFooterComponent } from './sharesd/layout/nav-footer/nav-footer.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavFooterComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
