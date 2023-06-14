@@ -16,7 +16,7 @@ body {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: auto 1fr auto;
-  grid-gap: 12px;
+  grid-gap: 2px;
   grid-template-areas:
   "nav header header"
   "nav content side"
@@ -24,6 +24,7 @@ body {
   height: 100vh;
 }
 /*
+https://stackblitz.com/github/SinghDigamber/angular-css-grid?file=src%2Fapp%2Fmain%2Fmain.component.html,src%2Fstyles.css,src%2Fapp%2Fapp.component.css
 		"logo nav nav"
 		"sidenav content advert"
 		"sidenav footer footer"
@@ -38,7 +39,7 @@ app-header {
 
 app-nav {
   grid-area: nav;
-  margin-left: 0.6rem;
+  // margin-left: 0.6rem;
   background-color: #2A92BF;
 }
 
@@ -52,7 +53,7 @@ app-main {
 
 app-aside {
   grid-area: side;
-  margin-right: 0.6rem;
+  // margin-right: 0.6rem;
   background-color: #2A92BF;
 }
 

@@ -5,11 +5,13 @@ https://github.com/piotrkorlaga/demo-angular-breadcrumb/blob/master/src/app/brea
 
 # css grid
 
+https://www.origamid.com/projetos/css-grid-layout-guia-completo/
 https://stackblitz.com/github/SinghDigamber/angular-css-grid?file=src%2Fapp%2Fmain%2Fmain.component.html,src%2Fstyles.css,src%2Fapp%2Fapp.module.ts
 https://www.paigeniedringhaus.com/blog/use-css-grid-to-make-a-fixed-sidebar-with-scrollable-main-body
 https://medium.com/swlh/how-to-use-css-grid-with-angular-96759f5378c2
 https://css-tricks.com/snippets/css/complete-guide-grid/
 https://stackblitz.com/edit/angular-modern-cssgrid?file=src%2Fmain.ts
+https://codepen.io/origamid/pen/owyjxz
 
 # buttons
 
