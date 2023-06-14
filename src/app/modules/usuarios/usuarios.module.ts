@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UsuariosComponent } from './usuarios.component';
 import { RouterModule, Routes } from '@angular/router';
-import { UserResolverService } from 'src/app/modules/users/user-resolver.service';
-import { BreadcrumbModule } from 'src/app/components/breadcrumb/breadcrumb.module';
+
 import { UsuarioComponent } from './usuario/usuario.component';
+import { BreadcrumbModule } from 'src/app/shared/components/breadcrumb/breadcrumb.module';
+import { UserResolverService } from './user-resolver.service';
 
 const routes: Routes = [
   {

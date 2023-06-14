@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArquivoDepositoComponent } from './arquivo-deposito.component';
-import { BoxModule } from 'src/app/components/box/box.module';
 import { RouterModule } from '@angular/router';
+import { BoxModule } from 'src/app/shared/components/box/box.module';
 
 const routes = [
   {

@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { ViewEncapsulation } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { User } from 'src/app/modules/users/user.model';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { User } from './user.model';
 
 @Component({
   selector: 'app-usuarios',

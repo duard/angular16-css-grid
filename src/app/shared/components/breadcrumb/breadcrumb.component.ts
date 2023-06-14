@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Breadcrumb } from 'src/app/models/breadcrumb.model';
-import { BreadcrumbService } from 'src/app/services/breadcrumb.service';
+import { Breadcrumb } from '../../models/breadcrumb.model';
+import { BreadcrumbService } from '../../services/breadcrumb.service';
 
 @Component({
   selector: 'app-breadcrumb',

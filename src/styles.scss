@@ -18,12 +18,16 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-gap: 12px;
   grid-template-areas:
-  "header header header"
+  "nav header header"
   "nav content side"
-  "footer footer footer";
+  "nav footer footer";
   height: 100vh;
 }
-
+/*
+		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
+*/
 app-header {
   color: white;
   font-size: 14px;

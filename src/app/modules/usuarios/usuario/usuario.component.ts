@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { User } from 'src/app/modules/users/user.model';
+import { User } from '../user.model';
 
 @Component({
   selector: 'app-usuario',
