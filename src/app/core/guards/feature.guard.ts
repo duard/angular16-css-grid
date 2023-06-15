@@ -23,7 +23,8 @@ export class FeatureGuard implements CanLoad {
     console.log(`DATA ROUTE`, data);
     const feature = data ? data['feature'] : null;
     if (feature) {
-      const isEnabled = this.featureFlagsService.isFeatureEnabled(feature);
+      console.log(feature);
+      const isEnabled = this.featureFlagsService.isFeatureFlagEnabled(feature);
       if (isEnabled) {
         return true;
       }

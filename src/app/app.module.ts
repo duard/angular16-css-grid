@@ -1,5 +1,8 @@
 import { APP_INITIALIZER, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,6 +30,8 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () =>
     FeatureFlagDirectiveModule,
   ],
   providers: [
+    provideClientHydration(),
+
     BrowserStorageService,
     {
       provide: APP_INITIALIZER,

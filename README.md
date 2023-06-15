@@ -4,6 +4,7 @@
 - [x] Feature flag routes/directive
 - [x] Load browser data
 - [x] CSS Grid responsible
+- [ ] Hide some elements
 
 ## install and run
 

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { get, has, result } from 'lodash';
-import { tap } from 'rxjs/operators';
+
 import { FeatureFlagConfig } from '../interfaces/feature-flags.interface';
 import { firstValueFrom } from 'rxjs';
 
@@ -19,15 +19,17 @@ export class FeatureFlagsService {
     const response = this.http.get<FeatureFlagConfig>(this.configUrl);
     const result = await firstValueFrom(response);
     this.config = result;
-    console.log(`RESULT`, result);
   }
 
-  isFeatureEnabled(key: string) {
+  isFeatureFlagEnabled(key: string) {
+    console.log(`FLAGS CONFIG`, this.config);
+    let flagResult = false;
     if (this.config && has(this.config, key)) {
-      return get(this.config, key, false);
+      flagResult = get(this.config, key, false);
     }
-    console.log(`FEATURE OCULTADA`, key);
 
-    return false;
+    console.log(`FEATURE OCULTADA`, key, flagResult);
+
+    return flagResult;
   }
 }

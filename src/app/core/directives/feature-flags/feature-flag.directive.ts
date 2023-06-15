@@ -20,7 +20,7 @@ export class FeatureFlagDirective implements OnInit {
 
   ngOnInit() {
     const isEnabled =
-      this.featureFlagService.isFeatureEnabled(this.featureFlag) || false;
+      this.featureFlagService.isFeatureFlagEnabled(this.featureFlag) || false;
     if (isEnabled) {
       this.vcr.createEmbeddedView(this.tpl);
     }
