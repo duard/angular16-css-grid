@@ -1,19 +1,7 @@
-● Typescript e Angular versão 14 ou superior;
+# Angular 16 estudos
 
-● Layout Responsivo;
+Aplicação utilizando
 
-● testes unitários;
 
-● versionamento de código utilizando Git.
 
-● Boas práticas na escrita de código (Clean Code, linters);
-
-● Conhecimentos em Arquitetura de Software;
-
-● Gerenciamento de dependências com NPM e/ou YARN;
-
-● Github;
-
-● Uso do padrão “feature flag”;
-
-● Experiência na implementação de ferramentas de “tracking”, ou “tagueamento” (por exemplo: Google Analytics, Google Tag Manager);
+![image](https://github.com/duard/angular16-css-grid/assets/36894/79f098fa-674f-479f-bc82-3fc5f365fc89)
