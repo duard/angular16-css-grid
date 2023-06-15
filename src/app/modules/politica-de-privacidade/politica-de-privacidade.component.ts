@@ -4,8 +4,8 @@ import {
   ViewEncapsulation,
   inject,
 } from '@angular/core';
+import { GLOBAL_SIGNAL_SERVICE } from 'src/app/core/services/global-signal.service';
 import { AppGlobal } from 'src/app/shared/models/app-global.model';
-import { GLOBAL_SIGNAL_SERVICE } from 'src/app/shared/services/global-signal.service';
 
 @Component({
   selector: 'app-politica-de-privacidade',
@@ -20,16 +20,8 @@ export class PoliticaDePrivacidadeComponent {
   constructor() {}
 
   ngOnInit(): void {}
-  ngDoCheck(): void {
-    console.log('ngDoCheck PoliticaDePrivacidadeComponent');
-  }
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log(
-      'ngOnChanges PoliticaDePrivacidadeComponent',
-      changes,
-      this.currentUser()
-    );
-  }
+  ngDoCheck(): void {}
+  ngOnChanges(changes: SimpleChanges): void {}
   clickMenu() {
     console.log(`clicou no menuzinho`);
     this.globalSignalService.setSignal('companyName', 'Simples');

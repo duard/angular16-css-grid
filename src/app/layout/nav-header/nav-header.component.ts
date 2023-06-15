@@ -1,7 +1,7 @@
 import { Component, SimpleChanges, inject } from '@angular/core';
+import { BrowserStorageService } from 'src/app/core/services/browser-storage.service';
+import { GLOBAL_SIGNAL_SERVICE } from 'src/app/core/services/global-signal.service';
 import { AppGlobal } from 'src/app/shared/models/app-global.model';
-import { BrowserStorageService } from 'src/app/shared/services/browser-storage.service';
-import { GLOBAL_SIGNAL_SERVICE } from 'src/app/shared/services/global-signal.service';
 
 @Component({
   selector: 'app-nav-header',
@@ -25,15 +25,9 @@ export class NavHeaderComponent {
     );
   }
 
-  ngDoCheck(): void {
-    console.log('ngDoCheck NavHeaderComponent');
-  }
+  ngDoCheck(): void {}
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges NavHeaderComponent', changes, this.currentUser());
-  }
+  ngOnChanges(changes: SimpleChanges): void {}
 
-  clickMenu() {
-    console.log(`clicou no menuzinho`, this.appName());
-  }
+  clickMenu() {}
 }

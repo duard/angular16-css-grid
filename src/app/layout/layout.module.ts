@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { MaterialModule } from '../shared/material.module';
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
+import { FeatureFlagDirectiveModule } from '../core/directives/feature-flags/feature-directive.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,13 @@ import { NavFooterComponent } from './nav-footer/nav-footer.component';
     NavHeaderComponent,
     NavFooterComponent,
   ],
-  imports: [CommonModule, MaterialModule, RouterModule],
+
+  imports: [
+    CommonModule,
+    MaterialModule,
+    RouterModule,
+    FeatureFlagDirectiveModule,
+  ],
   exports: [
     AsideComponent,
     FooterComponent,

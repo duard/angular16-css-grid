@@ -1,7 +1,7 @@
 import { Component, SimpleChanges, inject } from '@angular/core';
-import { GLOBAL_SIGNAL_SERVICE } from './shared/services/global-signal.service';
 import { AppGlobal } from './shared/models/app-global.model';
-import { BrowserStorageService } from './shared/services/browser-storage.service';
+import { BrowserStorageService } from './core/services/browser-storage.service';
+import { GLOBAL_SIGNAL_SERVICE } from './core/services/global-signal.service';
 
 @Component({
   selector: 'app-root',
@@ -37,10 +37,6 @@ export class AppComponent {
       this.browserStorage.setLocal('currentUser', this.currentUser());
     }
   }
-  ngDoCheck(): void {
-    console.log('ngDoCheck AppComponent');
-  }
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges AppComponent', changes, this.currentUser());
-  }
+  ngDoCheck(): void {}
+  ngOnChanges(changes: SimpleChanges): void {}
 }
