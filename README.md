@@ -1,9 +1,9 @@
 # Simples Angular 16
 
-[x] Use signals to state data
-[x] Feature flag routes/directive
-[x] Load browser data
-[x] CSS Grid responsible
+- [x] Use signals to state data
+- [x] Feature flag routes/directive
+- [x] Load browser data
+- [x] CSS Grid responsible
 
 ## install and run
 
