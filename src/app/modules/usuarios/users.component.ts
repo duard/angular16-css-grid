@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ViewEncapsulation } from '@angular/core';
-import { User } from './user.model';
+import { User } from './users.model';
 
 @Component({
-  selector: 'app-usuarios',
-  templateUrl: './usuarios.component.html',
-  styleUrls: ['./usuarios.component.scss'],
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class UsuariosComponent {
+export class UsersComponent {
   users: User[] = [];
 
   constructor(private readonly http: HttpClient) {}

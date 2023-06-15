@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UsuariosComponent } from './usuarios.component';
 import { RouterModule, Routes } from '@angular/router';
 
-import { UsuarioComponent } from './usuario/usuario.component';
 import { BreadcrumbModule } from 'src/app/shared/components/breadcrumb/breadcrumb.module';
-import { UserResolverService } from './user-resolver.service';
+import { UserResolverService } from './users-resolver.service';
+import { UsersComponent } from './users.component';
+import { UserComponent } from './usuario/user.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: UsuariosComponent,
+    component: UsersComponent,
     data: { breadcrumb: 'Users' },
     children: [
       {
         path: ':id',
-        component: UsuarioComponent,
+        component: UserComponent,
         data: { breadcrumb: (data: any) => `${data.user.name}` },
         resolve: { user: UserResolverService },
       },
@@ -23,8 +23,8 @@ const routes: Routes = [
   },
 ];
 @NgModule({
-  declarations: [UsuariosComponent, UsuarioComponent],
+  declarations: [UserComponent, UsersComponent],
   imports: [CommonModule, RouterModule.forChild(routes), BreadcrumbModule],
   exports: [RouterModule],
 })
-export class UsuariosModule {}
+export class UsersModule {}

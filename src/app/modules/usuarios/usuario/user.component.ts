@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { User } from '../user.model';
+import { User } from '../users.model';
 
 @Component({
-  selector: 'app-usuario',
-  templateUrl: './usuario.component.html',
-  styleUrls: ['./usuario.component.scss'],
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss'],
 })
-export class UsuarioComponent {
+export class UserComponent {
   user: User | undefined;
 
   constructor(private readonly activatedRoute: ActivatedRoute) {}

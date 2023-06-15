@@ -1,6 +1,6 @@
 import { Component, SimpleChanges, inject } from '@angular/core';
 import { GLOBAL_SIGNAL_SERVICE } from './shared/services/global-signal.service';
-import { Settings } from './shared/models/settings.model';
+import { AppGlobal } from './shared/models/app-global.model';
 
 @Component({
   selector: 'app-root',
@@ -12,13 +12,13 @@ export class AppComponent {
 
   globalSignalService = inject(GLOBAL_SIGNAL_SERVICE);
 
-  currentUser = this.globalSignalService.getSignal<Settings>('currentUser');
-  appName = this.globalSignalService.getSignal<Settings>('companyName');
+  currentUser = this.globalSignalService.getSignal<AppGlobal>('currentUser');
+  appName = this.globalSignalService.getSignal<AppGlobal>('companyName');
   ngOnInit(): void {}
   ngDoCheck(): void {
-    console.log('ngDoCheck');
+    console.log('ngDoCheck AppComponent');
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges', changes, this.currentUser());
+    console.log('ngOnChanges AppComponent', changes, this.currentUser());
   }
 }

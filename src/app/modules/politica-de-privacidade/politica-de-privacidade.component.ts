@@ -4,7 +4,7 @@ import {
   ViewEncapsulation,
   inject,
 } from '@angular/core';
-import { Settings } from 'src/app/shared/models/settings.model';
+import { AppGlobal } from 'src/app/shared/models/app-global.model';
 import { GLOBAL_SIGNAL_SERVICE } from 'src/app/shared/services/global-signal.service';
 
 @Component({
@@ -15,8 +15,8 @@ import { GLOBAL_SIGNAL_SERVICE } from 'src/app/shared/services/global-signal.ser
 })
 export class PoliticaDePrivacidadeComponent {
   globalSignalService = inject(GLOBAL_SIGNAL_SERVICE);
-  currentUser = this.globalSignalService.getSignal<Settings>('currentUser');
-  appName = this.globalSignalService.getSignal<Settings>('companyName');
+  currentUser = this.globalSignalService.getSignal<AppGlobal>('currentUser');
+  appName = this.globalSignalService.getSignal<AppGlobal>('companyName');
   constructor() {}
 
   ngOnInit(): void {}
