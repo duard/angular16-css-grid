@@ -2,5 +2,5 @@
   <button mat-icon-button (click)="clickMenu()">
     <mat-icon>menu</mat-icon>
   </button>
-  <button mat-button>{{ title }}</button>
+  <button mat-button>{{ appName() || "NoneApp" }}</button>
 </mat-toolbar>
