@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-arquivo-deposito',
   templateUrl: './arquivo-deposito.component.html',
   styleUrls: ['./arquivo-deposito.component.scss'],
-  // encapsulation: ViewEncapsulation.None, move css to scss
+  encapsulation: ViewEncapsulation.None,
 })
 export class ArquivoDepositoComponent {
   colors = [

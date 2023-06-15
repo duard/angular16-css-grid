@@ -4,7 +4,6 @@
 // @import url("//fonts.googleapis.com/earlyaccess/notosanstc.css");
 // @import url("//fonts.googleapis.com/earlyaccess/lato.css");
 
-
 body {
   margin: 0;
   padding: 0;
@@ -48,7 +47,7 @@ app-header {
   // font-size: 14px;
   grid-area: header;
   text-align: center;
-  background-color: #8b7266;
+  background-color: #ff0000;
   height: 50px;
 }
 
@@ -57,6 +56,7 @@ app-nav {
   // margin-left: 0.6rem;
   background-color: #2A92BF;
 }
+
 app-nav-header {
   // color: white;
   // font-size: 14px;
@@ -84,7 +84,7 @@ app-footer {
   background-color:#2BB961;
   color: white;
   text-align: center;
-  padding: 25px 0;
+  // padding: 25px 0;
   height: 50px;
 }
 
@@ -116,19 +116,19 @@ ul li a {
   }
 }
 
-app-home {
-  background-color: rgb(219, 218, 219);
-  grid-area: content;
+// app-home {
+//   background-color: rgb(219, 218, 219);
+//   grid-area: content;
 
-  padding: 25px;
-  overflow-y: scroll;
-}
+//   padding: 25px;
+//   overflow-y: scroll;
+// }
 
-app-arquivo-deposito {
-  background-color: rgb(219, 218, 219);
-  grid-area: content;
-  padding: 25px;
-  overflow-y: scroll;
-}
+// app-arquivo-deposito {
+//   background-color: rgb(219, 218, 219);
+//   grid-area: content;
+//   padding: 25px;
+//   overflow-y: scroll;
+// }
 
 

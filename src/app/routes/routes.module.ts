@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainComponent } from '../shared/layout/main/main.component';
+import { MainComponent } from '../layout/main/main.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'main' },
