@@ -17,15 +17,12 @@ export class AppComponent {
   currentUser = this.globalSignalService.getSignal<AppGlobal>('currentUser');
   appName = this.globalSignalService.getSignal<AppGlobal>('companyName');
 
-  constructor(private browserStorage: BrowserStorageService) {
-    console.log(`Buscando dados`);
-  }
+  constructor(private browserStorage: BrowserStorageService) {}
 
   ngOnInit(): void {
     if (!this.appName()) {
       this.globalSignalService.setSignal('appName', this.titleName);
       this.browserStorage.setLocal('appName', this.titleName);
-      console.log(`SETITNGS`, this.appName());
     }
     if (!this.currentUser()) {
       this.globalSignalService.setSignal('currentUser', {
