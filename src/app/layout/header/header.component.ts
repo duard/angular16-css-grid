@@ -1,5 +1,5 @@
 import { Component, SimpleChanges, computed, inject } from '@angular/core';
-import { User } from 'src/app/modules/usuarios/users.model';
+import { User } from 'src/app/modules/users/users.model';
 import { AppGlobal } from 'src/app/shared/models/app-global.model';
 import { GLOBAL_SIGNAL_SERVICE } from 'src/app/shared/services/global-signal.service';
 

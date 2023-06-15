@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 
 import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { MaterialModule } from '../shared/material.module';
+import { NavFooterComponent } from './nav-footer/nav-footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MaterialModule } from '../shared/material.module';
     MainComponent,
     NavComponent,
     NavHeaderComponent,
+    NavFooterComponent,
   ],
   imports: [CommonModule, MaterialModule, RouterModule],
   exports: [

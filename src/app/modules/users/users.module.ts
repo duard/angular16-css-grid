@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BreadcrumbModule } from 'src/app/shared/components/breadcrumb/breadcrumb.module';
 import { UserResolverService } from './users-resolver.service';
 import { UsersComponent } from './users.component';
-import { UserComponent } from './usuario/user.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {

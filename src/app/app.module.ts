@@ -7,11 +7,11 @@ import { MaterialModule } from './shared/material.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './routes/routes.module';
-import { NavFooterComponent } from './sharesd/layout/nav-footer/nav-footer.component';
 import { LayoutModule } from './layout/layout.module';
+import { BrowserStorageService } from './shared/services/browser-storage.service';
 
 @NgModule({
-  declarations: [AppComponent, NavFooterComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -20,7 +20,7 @@ import { LayoutModule } from './layout/layout.module';
     AppRoutingModule,
     LayoutModule,
   ],
-  providers: [],
+  providers: [BrowserStorageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
