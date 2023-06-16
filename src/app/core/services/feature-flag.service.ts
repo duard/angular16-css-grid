@@ -11,18 +11,18 @@ import { firstValueFrom } from 'rxjs';
 export class FeatureFlagsService {
   config: FeatureFlagConfig = {};
   // feature flag configs
-  configUrl = `https://gist.githubusercontent.com/duard/1e5106ad587446cee40241ec10624cf5/raw/1f769da848e0ba691d5f8135998a94c9f0ecbfdf/feature-flags.json`;
+  configUrl = `https://gist.githubusercontent.com/duard/1e5106ad587446cee40241ec10624cf5/raw/96773f898cc06c0c062b6bdacb9d106f8934acaa/feature-flags.json`;
 
   constructor(private http: HttpClient) {}
 
   async loadConfig(): Promise<any> {
     const response = this.http.get<FeatureFlagConfig>(this.configUrl);
     const result = await firstValueFrom(response);
+    console.log(`FLAGS CONFIG`, result);
     this.config = result;
   }
 
   isFeatureFlagEnabled(key: string) {
-    console.log(`FLAGS CONFIG`, this.config);
     let flagResult = false;
     if (this.config && has(this.config, key)) {
       flagResult = get(this.config, key, false);

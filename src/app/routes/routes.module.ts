@@ -6,7 +6,14 @@ import { FeatureGuard } from '../core/guards/feature.guard';
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'main' },
 
-  { path: 'main', component: MainComponent },
+  {
+    path: 'main',
+    component: MainComponent,
+    canLoad: [FeatureGuard],
+    data: {
+      feature: 'main',
+    },
+  },
   {
     path: 'home',
     loadChildren: () =>
@@ -30,7 +37,6 @@ export const routes: Routes = [
         (m) => m.ArquivoDepositoModule
       ),
     canLoad: [FeatureGuard],
-
     data: {
       feature: 'arquivo-deposito',
     },

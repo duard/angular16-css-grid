@@ -1,18 +1,9 @@
 <nav>
   <ul>
-    <li><a routerLink="/main">main</a></li>
-    <li *featureFlag="'usuarios'"><a routerLink="/home">home</a></li>
+    <li *featureFlag="'main'"><a routerLink="/main">main</a></li>
+    <li *featureFlag="'home'"><a routerLink="/home">home</a></li>
     <li *featureFlag="'usuarios'"><a routerLink="/usuarios">usuarios</a></li>
     <li *featureFlag="'arquivo-deposito'"><a routerLink="/arquivo-deposito">Page Test</a></li>
     <li *featureFlag="'privacy-policy'"><a routerLink="/privacy-policy">Privacy Policy</a></li>
   </ul>
 </nav>
-<!-- <ng-container *featureFlag="'usuarios'">
-  <a routerLink="/snippets">Snippets</a>
-</ng-container>
-<ng-container *featureFlag="'bookmarks'">
-  <a routerLink="/bookmarks">Bookmarks</a>
-</ng-container>
-<ng-container *featureFlag="'packages'">
-  <a routerLink="/packages">Packages</a>
-</ng-container> -->
